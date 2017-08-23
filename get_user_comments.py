@@ -43,6 +43,7 @@ def getUserComments(userName):
     if 'submitted' in userData:
         submittedIdList = userData['submitted']
         timestampList = []
+        
         for submissionId in submittedIdList:
             timestamp = getTimestampFromSubmission(submissionId)
             if timestamp is not None:
